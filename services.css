@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CSS para a nav-bar */
+
+:root {
+    --color1: #15192a;
+    --color2: #101010;
+    --color3: #ffffff;
+    --color4: #d00a2b;
+    --color5: #121117;
+
+}
+
+.services {
+    background-color: var(--color5);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.services-cards {
+    gap: 20px;
+    padding: 20px;
+}
+
+.services-cards-container {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    background-color: var(--color2);
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 10);
+    margin: 10px;
+    width: 600px;
+    max-width: 600px;
+}
+
+.services-card:hover {
+    transform: scale(1.10);
+    transition: all 0.3s;
+}
+
+.services-card-img {
+    width: 100px;
+    height: 100px;
+}
+
+.services-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.services-card p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services-card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.services-card-content img {
+    width: 100px
+}
+
+.services-card-button {
+    background-color: var(--color4);
+    color: var(--color3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .services-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .services-container {
+        padding: 40px;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-container {
+        padding: 30px;
+        font-size: 28px;
+    }
+
+    .services-card {
+        padding: 15px;
+    }
+
+    .services-card h3 {
+        font-size: 20px;
+    }
+
+    .services-card p {
+        font-size: 16px;
+    }
+
+    .services-card-content img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-container {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .services-card {
+        margin: 5px;
+    }
+
+    .services-card-content img {
+        width: 60px;
+    }
+
+    .services-card-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
